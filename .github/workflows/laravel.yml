@@ -6,7 +6,7 @@ jobs:
   laravel:
     runs-on: ubuntu-latest
 
-    step:
+    steps:
       - uses: actions/checkout@v1
       - name: Install composer dependencies
         run: composer install
