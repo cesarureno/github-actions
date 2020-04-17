@@ -12,6 +12,8 @@ jobs:
         run: composer install
       - name: Install node dependecies
         run: npm install
+      - name: Generate project key
+        run: php artisan key:generate
       - name: Compile and mix assets
         run: npm run dev
       - name: Run tests
